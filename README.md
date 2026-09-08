@@ -7,6 +7,12 @@
 </div>
 
 
+> [!NOTE]
+> **Proof of Concept & Infrastructure Blueprint**  
+> Dieses Repository ist Teil einer konzeptionellen Infrastruktur für Agentic Commerce. Es dient als **Proof of Concept (PoC)** und Framework-Vorlage. Der Code ist experimentell und soll Entwicklern als Ausgangspunkt dienen, um eigene M2M- und Agenten-Systeme weiterzuentwickeln. Es handelt sich noch nicht um ein finales, produktionsreifes Release.
+
+
+
 > MCP-Server für die deutsche Verwaltungs- und Wirtschaftsinfrastruktur.
 
 Deutschland hat die komplexeste Verwaltungslandschaft Europas. Diese MCP-Server machen sie für KI-Agenten zugänglich.
@@ -63,12 +69,6 @@ npm install
 npm run build
 ```
 
-
-## 🚀 Quantum Leap Architecture: FSM Auto-Healing & WAL
-
-Die deutsche Bürokratie verzeiht keine Fehler. Dieser MCP-Server nutzt Enterprise-Grade Patterns:
-- **Auto-Healing XRechnung:** Ein lokales Small Language Model (SLM) in Kombination mit einer deterministischen State Machine repariert kaputte Legacy-EDI-Payloads semantisch *on-the-fly*.
-- **DATEV Offline-Resilience:** SQLite-backed Write-Ahead Logs (WAL) und idempotente Retry-Queues fangen API-Downtimes ab. Zero-Data-Loss Garantie für Buchungssätze.
 
 
 ---
