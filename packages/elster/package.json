@@ -1,0 +1,14 @@
+{
+  "name": "@mcp-deutschland/elster",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "fast-xml-parser": "^4.3.5",
+    "@mcp-deutschland/german-tax-utils": "*"
+  }
+}

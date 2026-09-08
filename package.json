@@ -1,0 +1,19 @@
+{
+  "name": "mcp-deutschland",
+  "version": "1.0.0",
+  "description": "MCP servers for German administrative and business infrastructure",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "shared/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
