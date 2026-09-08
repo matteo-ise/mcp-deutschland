@@ -1,5 +1,12 @@
 # mcp-deutschland
 
+<div align="center">
+  <img src="https://img.shields.io/badge/Agentic-Commerce-19C332?style=for-the-badge" alt="Agentic Commerce" />
+  <img src="https://img.shields.io/badge/Status-Pioneer-white?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
+</div>
+
+
 > MCP-Server für die deutsche Verwaltungs- und Wirtschaftsinfrastruktur.
 
 Deutschland hat die komplexeste Verwaltungslandschaft Europas. Diese MCP-Server machen sie für KI-Agenten zugänglich.

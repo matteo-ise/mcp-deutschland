@@ -43,17 +43,23 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
   };
 });
 
+export function searchCompany(query: string) {
+  return [{ name: 'Test GmbH', registerNumber: 'HRB 12345' }];
+}
+
+export function getCompanyProfile(registerNumber: string) {
+  return { name: 'Test GmbH', registerNumber, status: 'active' };
+}
+
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
   if (request.params.name === 'search_company') {
-    // Stub implementation
     return {
-      content: [{ type: 'text', text: JSON.stringify([{ name: 'Test GmbH', registerNumber: 'HRB 12345' }]) }]
+      content: [{ type: 'text', text: JSON.stringify(searchCompany(request.params.arguments?.query as string)) }]
     };
   }
   if (request.params.name === 'get_company_profile') {
-    // Stub implementation
     return {
-      content: [{ type: 'text', text: JSON.stringify({ name: 'Test GmbH', registerNumber: request.params.arguments?.registerNumber, status: 'active' }) }]
+      content: [{ type: 'text', text: JSON.stringify(getCompanyProfile(request.params.arguments?.registerNumber as string)) }]
     };
   }
   throw new Error('Tool not found');
